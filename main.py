@@ -3,12 +3,16 @@ from welcome__text import WelcomeText
 from option_texts import OptionTexts
 from Guess_number import Range
 
+
 top_of_range = Range()
 option = OptionTexts()
 welcome_text = WelcomeText()
 
 on = True
 while on:
+    """
+    While loop for cycle of game
+    """
     print(welcome_text)
     top_of_range.top_range()
     limit = top_of_range.limit()

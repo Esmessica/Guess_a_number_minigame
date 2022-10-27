@@ -6,6 +6,8 @@ class Range:
 
     def top_range(self):
 
+        """Range set and securing data type"""
+
         option = OptionTexts()
         self._range_limit = input("Type a number: ")
     
@@ -17,7 +19,11 @@ class Range:
                 input()
         else:
             print(option.wrong_type)
+
     def limit(self):
+
+        """Returning limit of range"""
+
         return self._range_limit
 
 
