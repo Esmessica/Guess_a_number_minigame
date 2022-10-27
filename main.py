@@ -9,19 +9,10 @@ welcome_text = WelcomeText()
 
 on = True
 while on:
-
-    
     print(welcome_text)
-    top_of_range = top_of_range.top_range()
-
-    if top_of_range <= 0 :
-        print(option.larger_than_zero)
-        input()
-
-        
-
-    random_number = random.randrange(0, top_of_range)
-
+    top_of_range.top_range()
+    limit = top_of_range.limit()
+    random_number = random.randrange(0, limit)
     guesses = 0
 
     while on:

@@ -7,12 +7,17 @@ class Range:
     def top_range(self):
 
         option = OptionTexts()
-        _range_limit = input("Type a number: ")
+        self._range_limit = input("Type a number: ")
     
-        if _range_limit.isdigit():
-            _range_limit = int(_range_limit)
+        if self._range_limit.isdigit():
+            self._range_limit = int(self._range_limit)
 
+            if self._range_limit <= 0 :
+                print(option.larger_than_zero)
+                input()
         else:
             print(option.wrong_type)
+    def limit(self):
+        return self._range_limit
 
 
